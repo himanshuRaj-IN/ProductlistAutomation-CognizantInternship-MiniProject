@@ -51,12 +51,12 @@ Class and Methods Definitions
 
 Class DriverSetup
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WebDriver driverSetup()  desc:  Read browser name from and config.properties file and create a static 'driver' instant of the WebDriver type.
+WebDriver driverSetup()            desc:  Read browser name from and config.properties file and create a static 'driver' instant of the WebDriver type.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Class ReadPropertiesFile
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Properties readPropertiesFile() desc: Return properties object after reading properties file Located in resources/config.properties
+Properties readPropertiesFile()    desc: Return properties object after reading properties file Located in resources/config.properties
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Class ScreenShot
@@ -78,3 +78,10 @@ void veirfyBenchesPage()        desc:   verify benches page by valdating subtitl
 void displayBenchesCategory()   desc:  print all dispaly category of the benches asvailable on console.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+Class IndustrialBenchesTest  
+-extends BenchesPage
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void verifyCountIdustrailBenches()   desc: this method verify where industrial benches is more than one.
+- also contain a main method that can be used to execute test case.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
