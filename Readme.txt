@@ -40,8 +40,41 @@ Other Notes :-
 
 1. This miniproject can execute TestCases on diffrent browsers
 
-⦁	Steps to configure test execution for diferent browsers:
+⦁ Steps to configure test execution for diferent browsers:
 
 1. Check if there is Browser executable(web driver file) is in drivers folder.if not paste webdriver of the respective browser with special care of installed version of browser in your computer.
 
-2. Change the name of the browser  variable in 	config.properties file  Located into the resources 	folder.
+2. Change the name of the browser  variable in 	config.properties file  Located into the resources folder.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Class and Methods Definitions 
+
+Class DriverSetup
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WebDriver driverSetup()  desc:  Read browser name from and config.properties file and create a static 'driver' instant of the WebDriver type.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Class ReadPropertiesFile
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Properties readPropertiesFile() desc: Return properties object after reading properties file Located in resources/config.properties
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Class ScreenShot
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+static void takeFullScreenShot (Webdriver , String )  desc: Take full window screenshot and store it into the Screenshots folder with name passed in as string concatination withthe timestamp at the end
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Class BenchesPage
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void driverSetup()  desc: create a static 'driver' instant of the WebDriver type.
+void closeBrowser() desc: close browser kill driver instant.
+void openUrl(String)  desc: open url according to the name which is mapped in the properties file 
+void validateTitle(String)  desc: verify title of the dom tha contain particular String which passed into the function print pass and fail accordingly.
+void hoverOnFurniture()  desc:  hover on the furniture 
+void hoverOnSeating()    desc:  hover on the Seating 
+void clickOnBenches()    desc:  click on the benches option
+void veirfyBenchesPage()  desc:   verify benches page by valdating subtitle benches in the DOM
+void displayBenchesCategory()  desc:  print all dispaly category of the benches asvailable on console.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
