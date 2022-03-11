@@ -48,6 +48,8 @@ Other Notes :-
 			1. firefox = Mozila firefox
 			2. edge    = Microsoft Edge
 			3. chrome  = Google Chrome browser
+			
+		note: chrome and edge is not added add it manually in drivers folder.
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Class and Methods Definitions 
