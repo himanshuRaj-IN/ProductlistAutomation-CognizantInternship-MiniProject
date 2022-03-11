@@ -50,7 +50,7 @@ Other Notes :-
 			3. chrome  = Google Chrome browser
 			
 		note: chrome and edge is not added add it manually in drivers folder.
-
+2. Implicitly wait is set to 30 seconds change accordingly in DriverSetup class driverSetup() method.
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Class and Methods Definitions 
 
