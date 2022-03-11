@@ -45,6 +45,9 @@ Other Notes :-
 1. Check if there is Browser executable(web driver file) is in drivers folder.if not paste webdriver of the respective browser with special care of installed version of browser in your computer.
 
 2. Change the name of the browser  variable in 	config.properties file  Located into the resources folder.
+			1. firefox = Mozila firefox
+			2. edge    = Microsoft Edge
+			3. chrome  = Google Chrome browser
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Class and Methods Definitions 
@@ -52,6 +55,13 @@ Class and Methods Definitions
 Class DriverSetup
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 WebDriver driverSetup()            desc:  Read browser name from and config.properties file and create a static 'driver' instant of the WebDriver type.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Class WriteOutputFile
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+static  void   write()                    desc:  shift the printstream to the Output.txt file 
+static void    writeOnConsole()           desc:  Shift the printstream to the console.
+static  void   printOutputTxtfile()       desc:  Print all content of the Output file on console 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Class ReadPropertiesFile
