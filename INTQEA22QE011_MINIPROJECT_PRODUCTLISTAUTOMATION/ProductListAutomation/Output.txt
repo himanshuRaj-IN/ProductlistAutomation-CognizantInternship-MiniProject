@@ -1,0 +1,30 @@
+# Setting up driver for firefox Browser.
+# Navigating to Url :  https://www.pepperfry.com/.
+
+# Validating title of page.
+- PASSED : Contains 'Online Furniture Shopping Store'
+- Screenshot captured Name : LandingPage_2022-03-11-15-08-05.png
+
+# Hovering over Furniture.
+# Hovering over seating.
+- Screenshot captured Name : HoveringSubmenu_2022-03-11-15-08-05.png
+
+# Clicking on Benches Option.
+# Verifying Sub Heading Benches page.
+- PASSED : Subtitle of page contains 'Benches'.
+- Screenshot captured Name : BenchesPage_2022-03-11-15-08-07.png
+
+# Displaying Benches with Respect to Category and Count.
+----------------------------------------------
+       Category                    Count
+----------------------------------------------
+1. Modern Benches                55 options
+2. Mid-Century Modern Benches    33 options
+3. Contemporary Benches          63 options
+4. Transitional Benches          6 options
+5. Traditional Benches           71 options
+6. Industrial Benches            14 options
+
+# Checking industrial bench are more than one.
+- PASSES : Yes there are More options available in industrial benches
+# Closing Browser.
